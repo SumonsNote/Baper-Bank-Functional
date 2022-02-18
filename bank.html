@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <header class="mt-5 text-center">
+            <h1 class="text-uppercase"><span class="text-danger">B</span>angladesh <span class="text-success">B</span>ank</h1>
+        </header>
+        <div class="container m-auto text-center">
+          <div class="row gap-3 mt-5">
+            <div class="col bg-success text-white p-3 rounded">
+              <h3>Deposit</h3>
+              <h3>$<span id="deposit-total">00</span></h3>
+            </div>
+            <div class="col bg-warning p-3 rounded">
+              <h3>Withdraw</h3>
+              <h3>$<span id="withdraw-total">00</span></h3>
+            </div>
+            <div class="col bg-primary text-white p-3 rounded">
+              <h3>Balance</h3>
+              <h3>$<span id="balance-total">1200</span></h3>
+            </div>
+          </div>
+        </div>
+        <!-- Depoist and Withdraw -->
+        <div class="container mt-5">
+          <div class="row gap-3">
+            <div class="col bg-primary p-4 text-white rounded">
+              <h4>Please Deposit</h4>
+              <input class="rounded px-2 border-0 w-75 py-1" type="text" id="deposit-input" placeholder="How much deposit"><br>
+              <button id="deposit-button" class="mt-2 bg-warning border-0 rounded fw-bold px-3 py-2">Deposit</button>
+            </div>
+            <div class="col bg-danger p-4 text-white rounded">
+              <h4>Please Withdraw</h4>
+              <input class="rounded px-2 border-0 w-75 py-1" type="text" id="withdraw-input" placeholder="How much withdraw"><br>
+              <button id="withdraw-button" class="mt-2 bg-warning border-0 rounded fw-bold px-3 py-2">Withdraw</button>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="./Js/functional.js"></script>
+</body>
+</html>
